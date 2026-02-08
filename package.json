@@ -8,5 +8,14 @@
   },
   "peerDependencies": {
     "typescript": "^5"
+  },
+  "dependencies": {
+    "@cerebras/cerebras_cloud_sdk": "^1.64.1",
+    "groq-sdk": "^0.37.0"
+  },
+  "scripts": {
+    "dev": "bun --watch run index.ts",
+    "check": "bun x tsc --noEmit",
+    "build": "bun build index.ts --outdir ./dist"
   }
 }
